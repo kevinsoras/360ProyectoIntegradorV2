@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>360upeu</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="stylebutton4.css">
+
+</head>
+
+
+<body class="multiple-scenes ">
+
+
+  
+
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+
+
+
+  
+  <div id="pano"></div>
+<div id="sceneList" >
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-area1">
+        <li class="text">Area1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-area2">
+        <li class="text">Area2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-area3">
+        <li class="text">Area3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-area4">
+        <li class="text">Area4</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar" style="display: none">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle" >
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+
+
+
+
+
+
+
+
+
+
+<div id="botonagregar" onclick="
+var x = document.getElementById('popup1');
+x.style.display = 'block';" >
+
+  <a href="#popup1" id="botonagregar2" class="button pulse">
+    Ingresa
+  </a>
+
+</div>
+
+
+<div id="popup1" class="overlay">
+  <div class="popup" style="height: 57%;">
+    <h2></h2>
+    <div id="esconderrapido" onclick="
+    var x = document.getElementById('popup1');
+    x.style.display = 'none';">
+
+      <a  href="#" id="closeboton" class="close"  >&times;</a>
+
+
+    </div>
+    <div class="content" style="width: 50%;float:left;height: 50%;" >
+      <img src="../../../images/modalfigure.svg"   style="width: 40%;position: absolute;top:15% ">
+    </div>
+    <div class="contentformulario" style="width: 32%;float:left;height: 100%;top:10%;text-align: center;" >
+      
+      <section class="form-register">
+        <h4>Registrate para más </h4>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre y Apellido" >
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <input class="botons" type="submit" value="Registrar">
+      </section>
+     
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+  
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+  
+</a>
+
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="../app-files/vendor/es5-shim.js"></script>
+<script src="../app-files/vendor/eventShim.js"></script>
+<script src="../app-files/vendor/classList.js"></script>
+<script src="../app-files/vendor/requestAnimationFrame.js" ></script>
+<script src="../app-files/vendor/screenfull.min.js" ></script>
+<script src="../app-files/vendor/bowser.min.js" ></script>
+<script src="../app-files/vendor/marzipano.js" ></script>
+
+<script src="../app-files/data.js"></script>
+<script src="../app-files/index2.js"></script>
+<script src="../../../js/jquery.min.js"></script>
+
+<script>
+
+
+  $(window).on('load', function() { // makes sure the whole site is loaded 
+  $('#status').fadeOut(); // will first fade out the loading animation 
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+  $('body').delay(350).css({'overflow':'visible'});
+
+ 
+
+})
+
+</script>
+</body>
+</html>

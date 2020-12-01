@@ -1,0 +1,5 @@
+{
+    "name":"Docker demo",
+    "dockerFile":"dockerfile",
+    "appPort": 5001
+}
