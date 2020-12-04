@@ -14,7 +14,8 @@
 
 
 <body class="multiple-scenes ">
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="sweetAlert.js"></script>
 
   
 
@@ -96,13 +97,13 @@ x.style.display = 'block';" >
     </div>
     <div class="contentformulario" style="width: 32%;float:left;height: 100%;top:10%;text-align: center;" >
       
-      <section class="form-register">
+      <form class="form-register" id="myForm">
         <h4>Registrate para más </h4>
-        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre y Apellido" >
-        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-        <input class="botons" type="submit" value="Registrar">
-      </section>
-     
+        <input class="controls" type="text"  name="nombres" id="nombres" placeholder="Ingrese su Nombre y Apellido" required>
+        <input class="controls" type="email"  name="correo" id="correo" placeholder="Ingrese su Correo" required>
+        <input class="botons" type="submit" onclick="validardatos()" value="Registrar">
+      </form>
+      
     </div>
   </div>
 </div>
@@ -167,6 +168,7 @@ x.style.display = 'block';" >
 <script src="../app-files/data.js"></script>
 <script src="../app-files/index2.js"></script>
 <script src="../../../js/jquery.min.js"></script>
+<script src="form.js"></script>
 
 <script>
 
@@ -181,5 +183,6 @@ x.style.display = 'block';" >
 })
 
 </script>
+
 </body>
 </html>
