@@ -2,7 +2,7 @@
 const thisForm = document.getElementById('myForm');
 thisForm.addEventListener('submit', async function (e) {
     e.preventDefault();
-    
+    alert("Asd")
     const formData = new FormData(thisForm).entries()
     const response = await fetch('http://127.0.0.1:3000/', {
         method: 'POST',
@@ -11,6 +11,7 @@ thisForm.addEventListener('submit', async function (e) {
         body: JSON.stringify(Object.fromEntries(formData))
     });
 
+    x(5);
     const result = await response.json();
     console.log(result)
     if(result.status ==200){
@@ -42,3 +43,48 @@ thisForm.addEventListener('submit', async function (e) {
 
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function x( resultado){
+  const result = response.json();
+
+  alert("ASd")
+}
